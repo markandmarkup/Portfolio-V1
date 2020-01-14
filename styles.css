@@ -43,3 +43,52 @@ h1 {
 .accent-color {
 	color: #C0D7E0;
 }
+
+nav {
+	background-color: #C0D7E0;
+	padding: 10px 0;
+	overflow: auto;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #0E1116;
+}
+
+/*.link-to-top {
+	vertical-align: middle;
+	float: left;
+	margin-left: 30px;
+}
+
+.img-top-arrow {
+	height: 16px;
+}*/
+
+nav a {
+	font-size: 20px;
+}
+
+.nav-links {
+	overflow: auto;
+	width: 700px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	line-height: 23px;
+}
+
+nav li {
+	display: block;
+	float: left;
+	width: 33.2%;
+	text-align: center;
+	margin: 2px 0 0 0;
+}
