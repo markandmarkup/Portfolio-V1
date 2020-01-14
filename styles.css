@@ -15,12 +15,15 @@ header {
 	background-color: #374B68;
 	padding-top: 16px;
 	height: 160px;
-	position: relative;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
 }
 
 .header-top {
 	text-align: center;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .logo {
@@ -116,6 +119,7 @@ nav li {
 	background-size: cover;
 	text-align: center;
 	position: relative;
+	margin-top: 160px;
 }
 
 .hero-caption {
@@ -184,6 +188,7 @@ nav li {
 	
 	#showcase {
 		height: calc(100vh - 206px);
+		margin-top: 126px;
 	}
 	
 	#showcase .a-box {
@@ -199,16 +204,14 @@ nav li {
 	}
 
 	.logo {
-		height: 30px;
-		display: block;
-		position: absolute;
-		left: 20px;
-		margin: 0;
+		display: none;
 	}
 	
 	.header-top h1 {
+		position: absolute;
 		font-size: 40px;
-		bottom: 5px;
+		bottom: 7px;
+		left: 30px;
 	}
 	
 	nav {
@@ -223,24 +226,27 @@ nav li {
 	}
 		
 	.hero-caption {
-		width: 450px;
+		width: 400px;
+		padding: 20px;
 	}
 
 	.hero-caption h1 {
-		font-size: 65px;
+		font-size: 55px;
 	}
 	
 	.hero-caption h3 {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	
 	#showcase {
+		margin-top: 64px;
 		height: calc(100vh - 144px);
 	}
 	
 	#showcase .a-box {
 		font-size: 18px;
 		left: 50%;
+		width: 220px;
 	}
 
 }
