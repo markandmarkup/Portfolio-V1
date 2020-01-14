@@ -145,6 +145,15 @@ nav li {
 	transform: translate(-50%, 0);
 }
 
+#about {
+	background-color: #20385E;
+}
+
+.center-container {
+	width: 900px;
+	margin: 0 auto;
+}
+
 @media screen and (max-width: 900px) {
 	
 	header {
