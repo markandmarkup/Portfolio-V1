@@ -154,6 +154,21 @@ nav li {
 	margin: 0 auto;
 }
 
+.content-container {
+	overflow: auto;
+}
+
+.col-2 {
+	width: 50%;
+	float: left;
+}
+
+.headshot {
+	display: block;
+	width: 100%;
+	padding: 40px;
+}
+
 @media screen and (max-width: 900px) {
 	
 	header {
