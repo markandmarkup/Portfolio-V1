@@ -180,6 +180,7 @@ nav li {
 #about {
 	background-color: #374B68;
 	position: relative;
+	min-height: 600px;
 }
 
 .center-container {
@@ -427,7 +428,8 @@ p {
 	}
 	
 	#about {
-		height: calc(100vh - 139px);
+		height: auto;
+		padding-bottom: 40px;
 	}
 	
 	#showcase .a-box {
