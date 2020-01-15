@@ -266,7 +266,9 @@ p {
 	transition: 0.5s ease;
 }
 
-.portfolio-project:hover .project-caption {
+.portfolio-project:hover .project-caption,
+.portfolio-project:focus .project-caption,
+.portfolio-project:active .project-caption {
 	opacity: 1;
 }
 
@@ -351,6 +353,21 @@ p {
 	.headshot {
 		margin: 4%;
 	}
+	
+	#portfolio {
+		height: auto;
+		padding-bottom: 40px;
+	}
+	
+	.portfolio-content {
+		height: auto;
+	}
+	
+	.portfolio-project {
+		width: 50%;
+		height: 285px;
+	}
+	
 }
 
 @media screen and (max-width: 600px) {
