@@ -120,7 +120,7 @@ nav li {
 	margin: 2px 0 0 0;
 }
 
-#showcase, #about {
+#showcase, #about, #portfolio {
 	height: calc(100vh - 240px);
 }
 
@@ -179,6 +179,7 @@ nav li {
 .center-container {
 	width: 880px;
 	margin: 0 auto;
+	height: 100%;
 }
 
 .about-content {
@@ -204,6 +205,55 @@ nav li {
 p {
 	font-size: 20px;
 	word-spacing: 2px;
+}
+
+#portfolio {
+	background-color: #20385E;
+	position: relative;
+}
+
+.portfolio-content {
+	overflow: auto;
+	height: 85%;
+}
+
+.portfolio-project {
+	width: 33.3%;
+	height: 50%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.project1 {
+	background-image: url('./images/project-1-sml.jpg');
+}
+
+/*.portfolio-project img {
+	height: 100%;
+}*/
+
+.portfolio-project h4, .portfolio-project p, .portfolio-project a {
+	position: absolute;
+	left: 10px;
+}
+
+.portfolio-project h4 {
+	top: 10px;
+}
+
+.portfolio-project .project-tech {
+	top: 10%;
+}
+
+.portfolio-project .project-summary {
+	top: 20%;
+}
+
+.portfolio a {
+	bottom: 10px;
 }
 
 @media screen and (max-width: 900px) {
