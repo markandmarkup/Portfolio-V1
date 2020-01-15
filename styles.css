@@ -127,7 +127,7 @@ nav li {
 }
 
 #showcase, #about, #portfolio {
-	height: calc(100vh - 240px);
+	height: calc(100vh - 235px);
 }
 
 #showcase {
@@ -326,8 +326,12 @@ p {
 	}
 	
 	#showcase {
-		height: calc(100vh - 206px);
+		height: calc(100vh - 201px);
 		margin-top: 126px;
+	}
+	
+	#about {
+		height: calc(100vh - 201px);
 	}
 	
 	#showcase .a-box {
@@ -392,7 +396,11 @@ p {
 	
 	#showcase {
 		margin-top: 64px;
-		height: calc(100vh - 144px);
+		height: calc(100vh - 139px);
+	}
+	
+	#about {
+		height: calc(100vh - 139px);
 	}
 	
 	#showcase .a-box {
