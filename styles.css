@@ -9,6 +9,7 @@ html {
 body {
 	font-family: 'Gelasio', serif;
 	color: #0E1116;
+	background-color: #374B68;
 }
 
 header {
@@ -44,6 +45,16 @@ h1 {
 	font-weight: 400;
 }
 
+h2 {
+	font-size: 40px;
+	margin: 0;
+	padding: 20px 0;
+	height: 80px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #C0D7E0;
+}
+
 h3 {
 	display: block;
 	padding: 0;
@@ -62,6 +73,15 @@ h3 {
 	color: #C0D7E0;
 }
 
+.accent-largetext {
+	font-size: 38px;
+	font-weight: 500;
+}
+
+.accent-serif {
+	font-family: 'Gelasio', serif;
+}
+
 nav {
 	background-color: #C0D7E0;
 	padding: 10px 0;
@@ -74,22 +94,21 @@ a {
 	color: #0E1116;
 }
 
-nav a {
-	font-size: 20px;
-}
-
 .nav-links {
 	overflow: auto;
 	width: 800px;
 	margin: 0 auto;
 	padding: 0 30px;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
 }
 
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: auto;
+	overflow: hidden;
 	line-height: 23px;
 }
 
@@ -101,8 +120,11 @@ nav li {
 	margin: 2px 0 0 0;
 }
 
-#showcase {
+#showcase, #about {
 	height: calc(100vh - 240px);
+}
+
+#showcase {
 	background-image: url('./images/project-1-hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -137,6 +159,10 @@ nav li {
 	padding: 15px 30px;
 }
 
+.a-section-title {
+	margin-left: 20px;
+}
+
 #showcase .a-box {
 	font-size: 20px;
 	position: absolute;
@@ -146,27 +172,38 @@ nav li {
 }
 
 #about {
-	background-color: #20385E;
+	background-color: #374B68;
+	position: relative;
 }
 
 .center-container {
-	width: 900px;
+	width: 880px;
 	margin: 0 auto;
 }
 
-.content-container {
+.about-content {
 	overflow: auto;
+	min-height: 470px;
 }
 
-.col-2 {
+.about-content p {
 	width: 50%;
 	float: left;
+	padding: 0 30px;
 }
 
 .headshot {
 	display: block;
-	width: 100%;
-	padding: 40px;
+	width: 46%;
+	float: left;
+	border: 20px solid #20385E;
+	border-radius: 50%;
+	margin: 20px 2%;
+}
+
+p {
+	font-size: 20px;
+	word-spacing: 2px;
 }
 
 @media screen and (max-width: 900px) {
@@ -208,6 +245,19 @@ nav li {
 	#showcase .a-box {
 		font-size: 18px;
 		left: 50%;
+	}
+	
+	.center-container {
+		width: 98%;
+	}
+	
+	.about-content p {
+		width: auto;
+		float: none;
+	}
+	
+	.headshot {
+		margin: 4%;
 	}
 }
 
@@ -261,6 +311,19 @@ nav li {
 		font-size: 18px;
 		left: 50%;
 		width: 220px;
+	}
+	
+	.about-content p {
+		width: 100%;
+	}
+	
+	.headshot {
+		display: block;
+		width: 46%;
+		float: none;
+		border: 20px solid #20385E;
+		border-radius: 50%;
+		margin: 0 auto 20px auto;
 	}
 
 }
