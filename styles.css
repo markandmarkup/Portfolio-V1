@@ -218,6 +218,10 @@ p {
 	position: relative;
 }
 
+.touchscreen-info {
+	display: none;
+}
+
 .portfolio-content {
 	overflow: auto;
 	height: 85%;
@@ -359,6 +363,12 @@ p {
 		padding-bottom: 40px;
 	}
 	
+	.touchscreen-info {
+		display: block;
+		margin: 0 0 8px 20px;
+		color: #C0D7E0;
+	}
+	
 	.portfolio-content {
 		height: auto;
 	}
@@ -441,6 +451,10 @@ p {
 	
 	#portfolio {
 		min-height: calc(100vh - 139px);
+	}
+	
+	.touchscreen-info {
+		display: none;
 	}
 	
 	.portfolio-content {
