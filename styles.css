@@ -63,6 +63,12 @@ h3 {
 	font-weight: 400;
 }
 
+h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+}
+
 .header-top h1 {
 	position: relative;
 	bottom: 17px;
@@ -120,17 +126,17 @@ nav li {
 	margin: 2px 0 0 0;
 }
 
-#showcase, #about {
-	height: calc(100vh - 240px);
+section.showcase, section.about, section.portfolio {
+	height: calc(100vh - 235px);
+	position: relative;
 }
 
-#showcase {
+section.showcase {
 	background-image: url('./images/project-1-hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	position: relative;
 	margin-top: 160px;
 }
 
@@ -163,7 +169,13 @@ nav li {
 	margin-left: 20px;
 }
 
-#showcase .a-box {
+.a-section-anchor {
+	position: absolute;
+	margin-top: -160px;
+	outline: none;
+}
+
+section.showcase .a-box {
 	font-size: 20px;
 	position: absolute;
 	bottom: 10%;
@@ -171,14 +183,15 @@ nav li {
 	transform: translate(-50%, 0);
 }
 
-#about {
+section.about {
 	background-color: #374B68;
-	position: relative;
+	min-height: 600px;
 }
 
 .center-container {
 	width: 880px;
 	margin: 0 auto;
+	height: 100%;
 }
 
 .about-content {
@@ -204,6 +217,93 @@ nav li {
 p {
 	font-size: 20px;
 	word-spacing: 2px;
+}
+
+section.portfolio {
+	background-color: #20385E;
+	min-height: 570px;
+}
+
+.touchscreen-info {
+	display: none;
+}
+
+.portfolio-content {
+	overflow: auto;
+	height: 83%;
+}
+
+.portfolio-project {
+	width: 33.3%;
+	height: 50%;
+	min-height: 193px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.project1 {
+	background-image: url('./images/project-1-sml.jpg');
+}
+
+.project2 {
+	background-image: url('./images/project-2-sml.jpg');
+}
+
+.project3 {
+	background-image: url('./images/project-3-sml.jpg');
+}
+
+.project4 {
+	background-image: url('./images/project-4-sml.jpg');
+}
+
+.project5 {
+	background-image: url('./images/project-5-sml.jpg');
+}
+
+.project6 {
+	background-image: url('./images/project-6-sml.jpg');
+}
+
+.project-caption {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	opacity: 0;
+	transition: 0.5s ease;
+}
+
+.portfolio-project:hover .project-caption,
+.portfolio-project:focus .project-caption,
+.portfolio-project:active .project-caption {
+	opacity: 1;
+}
+
+.portfolio-project h4, .portfolio-project p, .portfolio-project a {
+	color: #E6FAFC;
+}
+
+.portfolio-project h4, .project-tech, .project-summary {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 10px 10px 0 10px;
+}
+
+.project-summary {
+	font-size: 16px;
+}
+
+.portfolio-project .a-box {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: rgba(230,250,252,0.7);
+	color: #0E1116;
+	font-weight: 400;
 }
 
 @media screen and (max-width: 900px) {
@@ -237,18 +337,22 @@ p {
 		font-size: 24px;
 	}
 	
-	#showcase {
-		height: calc(100vh - 206px);
+	section.showcase {
+		height: calc(100vh - 201px);
 		margin-top: 126px;
 	}
 	
-	#showcase .a-box {
+	section.about {
+		height: calc(100vh - 201px);
+	}
+	
+	section.showcase .a-box {
 		font-size: 18px;
 		left: 50%;
 	}
 	
 	.center-container {
-		width: 98%;
+		width: 96%;
 	}
 	
 	.about-content p {
@@ -259,6 +363,31 @@ p {
 	.headshot {
 		margin: 4%;
 	}
+	
+	section.portfolio {
+		height: auto;
+		padding-bottom: 40px;
+	}
+	
+	.touchscreen-info {
+		display: block;
+		margin: 0 0 8px 20px;
+		color: #C0D7E0;
+	}
+	
+	.portfolio-content {
+		height: auto;
+	}
+	
+	.portfolio-project {
+		width: 50%;
+		height: 285px;
+	}
+	
+	.a-section-anchor {
+		margin-top: -126px;
+	}
+	
 }
 
 @media screen and (max-width: 600px) {
@@ -302,12 +431,17 @@ p {
 		font-size: 20px;
 	}
 	
-	#showcase {
+	section.showcase {
 		margin-top: 64px;
-		height: calc(100vh - 144px);
+		height: calc(100vh - 139px);
 	}
 	
-	#showcase .a-box {
+	section.about {
+		height: auto;
+		padding-bottom: 40px;
+	}
+	
+	section.showcase .a-box {
 		font-size: 18px;
 		left: 50%;
 		width: 220px;
@@ -324,6 +458,63 @@ p {
 		border: 20px solid #20385E;
 		border-radius: 50%;
 		margin: 0 auto 20px auto;
+	}
+	
+	section.portfolio {
+		min-height: calc(100vh - 139px);
+	}
+	
+	.touchscreen-info {
+		display: none;
+	}
+	
+	.portfolio-content {
+		margin-top: 20px;
+	}
+	
+	.portfolio-project {
+		width: 100%;
+		height: 140px;
+		min-height: initial;
+	}
+	
+	.project-caption {
+		opacity: 1;
+		height: 0;
+	}
+	
+	.project-summary {
+		display: none;
+	}
+	
+	.portfolio-project h4, .project-tech {
+		display: inline-block;
+		width: auto;
+		float: none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.8);
+		padding: 8px 12px 6px 18px;
+	}
+	
+	.portfolio-project h4 {
+		top: 0;
+	}
+	
+	.project-tech {
+		top: 46px;
+		font-size: 17px;
+	}
+	
+	.portfolio-project .a-box {
+		right: 0;
+		background-color: rgba(230,250,252,0.8);
+		font-weight: 400;
+		font-size: 17px;
+		padding: 12px 16px;
+	}
+	
+	.a-section-anchor {
+		margin-top: -64px;
 	}
 
 }
