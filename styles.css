@@ -172,6 +172,7 @@ section.showcase {
 .a-section-anchor {
 	position: absolute;
 	margin-top: -160px;
+	outline: none;
 }
 
 section.showcase .a-box {
