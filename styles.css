@@ -606,6 +606,12 @@ section.contact {
 		margin-top: -64px;
 	}
 	
+	.contact-bg {
+		height: 140px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	
 	.col2 {
 		width: 95%;
 		margin-left: 5%;
@@ -614,6 +620,11 @@ section.contact {
 	.social-link {
 		margin: 10px 0 10px 10px;
 		font-size: 18px;
+	}
+	
+	.social-link img {
+		width: 40px;
+		height: 40px;
 	}
 
 }
