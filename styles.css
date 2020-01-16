@@ -306,6 +306,31 @@ section.portfolio {
 	font-weight: 400;
 }
 
+section.contact {
+	height: calc(100vh - 160px);
+	min-height: 500px;
+	background-color: #E6FAFC;
+}
+
+.contact h2 {
+	color: #374B68;
+}
+
+.contact-content {
+	overflow: auto;
+	padding-top: 5%;
+}
+
+.col2 {
+	float: left;
+	width: 50%;
+}
+
+.social-link img {
+	width: 60px;
+	height: 60px;
+}
+
 @media screen and (max-width: 900px) {
 	
 	header {
