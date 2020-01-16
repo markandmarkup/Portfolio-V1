@@ -318,7 +318,8 @@ section.contact {
 
 .contact-content {
 	overflow: auto;
-	padding-top: 5%;
+	margin-top: 5%;
+	line-height: 1.3;
 }
 
 .col2 {
@@ -327,8 +328,18 @@ section.contact {
 }
 
 .social-link img {
+	vertical-align: middle;
 	width: 60px;
 	height: 60px;
+}
+
+.contact-email {
+	display: inline-block;
+	color: #20385E;
+	margin-left: 25px;
+	border-bottom: 1px dotted #20385E;
+	padding: 2px;
+	font-size: 22px;
 }
 
 @media screen and (max-width: 900px) {
