@@ -126,11 +126,11 @@ nav li {
 	margin: 2px 0 0 0;
 }
 
-#showcase, #about, #portfolio {
+section.showcase, section.about, section.portfolio {
 	height: calc(100vh - 235px);
 }
 
-#showcase {
+section.showcase {
 	background-image: url('./images/project-1-hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ nav li {
 	margin-left: 20px;
 }
 
-#showcase .a-box {
+section.showcase .a-box {
 	font-size: 20px;
 	position: absolute;
 	bottom: 10%;
@@ -177,7 +177,7 @@ nav li {
 	transform: translate(-50%, 0);
 }
 
-#about {
+section.about {
 	background-color: #374B68;
 	position: relative;
 	min-height: 600px;
@@ -214,9 +214,10 @@ p {
 	word-spacing: 2px;
 }
 
-#portfolio {
+section.portfolio {
 	background-color: #20385E;
 	position: relative;
+	min-height: 570px;
 }
 
 .touchscreen-info {
@@ -225,7 +226,7 @@ p {
 
 .portfolio-content {
 	overflow: auto;
-	height: 85%;
+	height: 83%;
 }
 
 .portfolio-project {
@@ -332,16 +333,16 @@ p {
 		font-size: 24px;
 	}
 	
-	#showcase {
+	section.showcase {
 		height: calc(100vh - 201px);
 		margin-top: 126px;
 	}
 	
-	#about {
+	section.about {
 		height: calc(100vh - 201px);
 	}
 	
-	#showcase .a-box {
+	section.showcase .a-box {
 		font-size: 18px;
 		left: 50%;
 	}
@@ -359,7 +360,7 @@ p {
 		margin: 4%;
 	}
 	
-	#portfolio {
+	section.portfolio {
 		height: auto;
 		padding-bottom: 40px;
 	}
@@ -422,17 +423,17 @@ p {
 		font-size: 20px;
 	}
 	
-	#showcase {
+	section.showcase {
 		margin-top: 64px;
 		height: calc(100vh - 139px);
 	}
 	
-	#about {
+	section.about {
 		height: auto;
 		padding-bottom: 40px;
 	}
 	
-	#showcase .a-box {
+	section.showcase .a-box {
 		font-size: 18px;
 		left: 50%;
 		width: 220px;
@@ -451,7 +452,7 @@ p {
 		margin: 0 auto 20px auto;
 	}
 	
-	#portfolio {
+	section.portfolio {
 		min-height: calc(100vh - 139px);
 	}
 	
