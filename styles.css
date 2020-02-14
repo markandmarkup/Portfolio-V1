@@ -646,7 +646,7 @@ section.contact {
 	}
 	
 	.col2 {
-		width: 95%;
+		width: 94%;
 		margin-left: 5%;
 	}
 	
@@ -658,5 +658,12 @@ section.contact {
 	.social-link img {
 		width: 40px;
 		height: 40px;
+	}
+
+	.contact-email {
+		display: block;
+		margin: 30px auto;
+		font-size: 20px;
+		width: 262px;
 	}
 }
