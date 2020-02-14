@@ -486,6 +486,24 @@ section.contact {
 	
 	nav {
 		display: none;
+		position: fixed;
+		top: 64px;
+		width: 100vw;
+		padding: 0;
+	}
+
+	.nav-links {
+		width: 100%;
+	}
+
+	nav li {
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	nav li:nth-child(2) {
+		border-top: 1px solid #B1C0D8;
+		border-bottom: 1px solid #B1C0D8;
 	}
 
 	p {
@@ -495,8 +513,17 @@ section.contact {
 	#burger-menu {
 		display: block;
 		position: absolute;
-		right: 20px;
-		top: 8px;
+		right: 0;
+		top: 0;
+		height: 64px;
+		width: 65px;
+		cursor: pointer;
+	}
+
+	#burger-menu img {
+		position: absolute;
+		top: 7px;
+		right: 8px;
 	}
 		
 	.hero-caption {
