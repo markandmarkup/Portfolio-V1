@@ -481,7 +481,7 @@ section.contact {
 		position: absolute;
 		font-size: 40px;
 		bottom: 7px;
-		left: 30px;
+		left: 12px;
 	}
 	
 	nav {
@@ -525,9 +525,18 @@ section.contact {
 		top: 7px;
 		right: 8px;
 	}
+
+	#burger-menu::after {
+		width: 65px;
+		height: 64px;
+		cursor: pointer;
+		text-align: center;
+		position: relative;
+		left: -65px;
+	}
 		
 	.hero-caption {
-		width: 400px;
+		width: 100%;
 		padding: 20px;
 	}
 
